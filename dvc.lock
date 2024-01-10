@@ -16,3 +16,23 @@ stages:
       hash: md5
       md5: 67eaf9825502936004bf7caad92a9e52
       size: 24333
+  train:
+    cmd: python train.py
+    deps:
+    - path: data_processed.csv
+      hash: md5
+      md5: 67eaf9825502936004bf7caad92a9e52
+      size: 24333
+    - path: train.py
+      hash: md5
+      md5: 39d476c29dc936509dccd334e77258f9
+      size: 1611
+    outs:
+    - path: by_region.png
+      hash: md5
+      md5: 3bbf0c5d4f6efdbd729d1171e3d6897b
+      size: 7930
+    - path: metrics.json
+      hash: md5
+      md5: 377238a799606f79913241d5ea752a2d
+      size: 89
