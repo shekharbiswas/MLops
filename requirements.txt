@@ -2,3 +2,4 @@ scikit-learn
 pandas
 seaborn
 matplotlib
+pip == 23.2.1
